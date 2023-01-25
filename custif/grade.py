@@ -15,20 +15,21 @@ TypeError: can only concatenate str (not "float") to str"""
 
 # wrap connection in a float() to accept decimals as numbers
 rating = float(input("What is your current rating (0-100)?"))
+string = str(rating)
 
 # if input value was higher or equal to 25
 if rating >= 90:
 #    message = message + 'A grade'
-    print("A grade " + rating)
+    print("A grade " + string)
 elif rating >= 80:
 #    message = message + 'B grade'
-    print("B grade " + rating)
+    print("B grade " + string)
 elif rating  >= 70:
 #    message = message + 'C grade'
-    print("C grade " + rating)
+    print("C grade " + string)
 elif rating  >= 60:
 #    message = message + 'D grade'
-    print("D grade " + rating)
+    print("D grade " + string)
 else:
 #    message = message + 'F'
-     print("F grade " + rating)
+     print("F grade " + string)
